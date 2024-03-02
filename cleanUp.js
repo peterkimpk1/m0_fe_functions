@@ -8,37 +8,35 @@
 
 
 // EX 1:
-function askForName() { console.log("Hello, what is your name?") }
-
+function askForName() {
+  return "Hello, what is your name?"; //functions should have a return statemment
 askForName()
 
 
 // EX 2:
 function addThreeNums(first, second, third) {
-var sum = first + second + third
-return sum;
-      }
-
-addThreeNums(1, 2, 3);
-addThreeNums(4, 2, 7);
+return first + second + third;
+}
+addThreeNums(1, 2, 3)
+addThreeNums(4, 2, 7)
+//Do not need to define the variable sum
 
 
 // EX 3:
-func makeFreshPesto(){
+function makeFreshPesto(){ //func to function
+
   console.log("Buy ingredients: basil, parmesan, romano, olive oil, pine nuts, garlic, salt, pepper");
   console.log("Pulse basil and pine nuts");
   console.log("Add garlic and cheeses");
   console.log("Slowly pour in oil");
-  console.log("Season");    }
-
-makeFreshPesto();
+  console.log("Season");   
+}
+makeFreshPesto()
 
 
 //  EX 4:
-function average(num1, num2) 
-  {
+function average(num1, num2) {
 var sum = num1 + num2;
-    var avg = sum / 2;
-
-return avg
+return sum / 2; //do not need to define the variable sum
   }
+average(3,5)
